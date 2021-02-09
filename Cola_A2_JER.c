@@ -15,8 +15,8 @@ int main() {
 	int i;
 	/* Nombre del alumno: Jesus Dario Rodriguez */
 	/* Matricula:ES1822021661 */
-	/* Universidad Abierta y a Distancia de México UnADM  */
-	/* Fecha: enero 2021 */
+	/* Universidad Abierta y a Distancia de MÃ©xico UnADM  */
+	/* Fecha: Febrero 2021 */
 	/* Carrera:Ingenieria en Desarrollo de Software */
 	/* Materia:Estructura de Datos  */
 	/* Docente:Ing. Alfredo Orozco Escobar */
