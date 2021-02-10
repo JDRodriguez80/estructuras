@@ -3,13 +3,15 @@
 #include<stdio.h>
 #include<stdbool.h>
 #include <locale.h> //libreria para acentuar
-    /* Nombre del alumno: Jesus Dario Rodriguez */
+    /* Nombre del alumno: Jesús Darío Rodríguez */
 	/* Matricula:ES1822021661 */
-	/* Universidad Abierta y a Distancia de MÃ©xico UnADM  */
+	/* Universidad Abierta y a Distancia de México UnADM  */
 	/* Fecha: Febrero 2021 */
 	/* Carrera:Ingenieria en Desarrollo de Software */
 	/* Materia:Estructura de Datos  */
-	/* Docente:Ing. Alfredo Orozco Escobar */	
+	/* Docente:Ing. Alfredo Orozco Escobar */
+	
+	/* definir variables */
 	
 #define ARREGLO_MAX 100
 	int dpila[ARREGLO_MAX];
