@@ -2,7 +2,15 @@
 
 #include<stdio.h>
 #include<stdbool.h>
-
+#include <locale.h> //libreria para acentuar
+    /* Nombre del alumno: Jesus Dario Rodriguez */
+	/* Matricula:ES1822021661 */
+	/* Universidad Abierta y a Distancia de MÃ©xico UnADM  */
+	/* Fecha: Febrero 2021 */
+	/* Carrera:Ingenieria en Desarrollo de Software */
+	/* Materia:Estructura de Datos  */
+	/* Docente:Ing. Alfredo Orozco Escobar */	
+	
 #define ARREGLO_MAX 100
 	int dpila[ARREGLO_MAX];
 	int eaux1;
@@ -20,27 +28,21 @@
 	evalor = 0;
 
 int main() {
-
-	/* Nombre del alumno: Jesus Dario Rodriguez */
-	/* Matricula:ES1822021661 */
-	/* Universidad Abierta y a Distancia de MÃ©xico UnADM  */
-	/* Fecha: Febrero 2021 */
-	/* Carrera:Ingenieria en Desarrollo de Software */
-	/* Materia:Estructura de Datos  */
-	/* Docente:Ing. Alfredo Orozco Escobar */
+	setlocale(LC_ALL,"");//parametro de libreria locale
+	
 
 	printf("Este programa demuestra las operaciones en la estructura de datos PILA o STACK\n");
 	printf("De cuantos elementos quiere la pila?\n");
 	scanf("%i",&n);
 	while (eaux1!=0) {
 		/* menu */
-		printf("||============  Seleccione una opcion ============||\n");
+		printf("||============  Seleccione una opción ============||\n");
 		printf(" ------------------------------------------------- \n");
 		printf("1.- Insertar elemento\n");
 		printf("2.- Comprobar si la pila esta llena\n");
-		printf("3.- Comprobar si la pila esta vacia\n");
+		printf("3.- Comprobar si la pila esta vacía\n");
 		printf("4.- Eliminar un elemento de la pila\n");
-		printf("5.- Comprobar situacion de la pila\n");
+		printf("5.- Comprobar situación de la pila\n");
 		printf("0.- Salir\n");
 		printf(" ------------------------------------------------- \n");
 		scanf("%i",&eopc);
@@ -65,10 +67,10 @@ int main() {
 		
 			if ((etope==0)) {
 				lmargen = true;
-				printf("la pila esta vacia\n");
+				printf("la pila esta vacía\n");
 			} else {
 				lmargen = false;
-				printf("la pila no esta vacia\n");
+				printf("la pila no esta vacía\n");
 			}
 			
 			break;
@@ -94,11 +96,11 @@ void push(){
 		if ((lmargen==true)) {
 				printf("Overflow error-- Pila llena\n");
 			} else {
-				printf("Introduzca un numero entero\n");
+				printf("Introduzca un número entero\n");
 				scanf("%i",&evalor);
-				printf("Se introdujo el valor:%i a la pila\n",evalor);
+				printf("Se ingreso el valor: %i a la pila\n",evalor);
 				if (etope==n) {
-					printf("Se alcanzo el cupo maximo permitido en la pila\n");
+					printf("Se alcanzo el cupo máximo permitido en la pila\n");
 				} else {
 					etope = etope+1;
 					dpila[etope-1] = evalor;
@@ -111,10 +113,10 @@ void push(){
 }
 void pop(){
 		if ((etope==0)) {
-				printf("Error: derflow: pila vacia\n");
+				printf("Error: derflow: pila vacía\n");
 			} else {
 				evalor = dpila[etope-1];
 				etope = etope-1;
-				printf("se elimino un lemento de manera correcta\n");
+				printf("se elimino un elemento de manera correcta\n");
 			}	
 }
