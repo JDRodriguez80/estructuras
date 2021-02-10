@@ -1,15 +1,14 @@
 #include<stdio.h>
 #include <locale.h> //libreria para acentuar
-	/* Nombre del alumno: Jesus Dario Rodriguez */
+	/* Nombre del alumno: Jesús Darío Rodríguez */
 	/* Matricula:ES1822021661 */
-	/* Universidad Abierta y a Distancia de MÃ©xico UnADM  */
+	/* Universidad Abierta y a Distancia de México UnADM  */
 	/* Fecha: Febrero 2021 */
 	/* Carrera:Ingenieria en Desarrollo de Software */
 	/* Materia:Estructura de Datos  */
 	/* Docente:Ing. Alfredo Orozco Escobar */
+	
 	/* definir variables */
-	/* inicializacion de variables */
-
 #define ARREGLO_MAX 100
 	int dcola[ARREGLO_MAX];
 	int eaux;
@@ -20,6 +19,7 @@
 	int emax;
 	int eopc;
 	int i;
+	/* inicializacion de variables */
 	i = 0;
 	edato = 0;
 	efrente = 0;
