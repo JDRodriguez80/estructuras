@@ -34,7 +34,7 @@ Algoritmo COLA
 		leer eOpc;
 		Segun eOpc hacer
 			1: //insercion de dato
-				si ((eFinal=eMax)&(eFrente=1)|((eFinal+1)=eFrente))
+				si ((eFinal=eMax)&&(eFrente=1)||((eFinal+1)=eFrente))
 					Entonces
 					Escribir "Error: Overflow: Cola sin lugares disponibles";
 				sino 
