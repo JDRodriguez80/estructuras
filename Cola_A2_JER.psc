@@ -1,7 +1,7 @@
-bAlgoritmo COLA
+Algoritmo COLA
 	//Nombre del alumno: Jesus Dario Rodriguez
 	//Matricula:ES1822021661
-	//Universidad Abierta y a Distancia de MÃ©xico UnADM 
+	//Universidad Abierta y a Distancia de México UnADM 
 	//Fecha: Febrero 2021
 	//Carrera:Ingenieria en Desarrollo de Software
 	//Materia:Estructura de Datos 
@@ -34,7 +34,7 @@ bAlgoritmo COLA
 		leer eOpc;
 		Segun eOpc hacer
 			1: //insercion de dato
-				si ((eFinal=eMax)&&(eFrente=1)||((eFinal+1)=eFrente))
+				si ((eFinal=eMax)&(eFrente=1)|((eFinal+1)=eFrente))
 					Entonces
 					Escribir "Error: Overflow: Cola sin lugares disponibles";
 				sino 
@@ -43,7 +43,7 @@ bAlgoritmo COLA
 					SiNo
 						eFinal<-eFinal+1;
 					FinSi
-					Escribir "Introduaca in numero entero";
+					Escribir "Introduzca un numero entero";
 					leer eDato;
 					Escribir "el dato ", eDato, " ha sido introducido de manera correcta";
 					dCola[eFinal]<-eDato;
@@ -52,7 +52,7 @@ bAlgoritmo COLA
 					FinSi
 				FinSi
 			2:	//verificar que la cola este llena
-				si (eFinal==eMax)&&(eFrente==1)Entonces
+				si (eFinal==eMax)&(eFrente==1)Entonces
 					Escribir "la cola esta llena";
 				SiNo
 					Escribir "la cola no esta llena"; 
