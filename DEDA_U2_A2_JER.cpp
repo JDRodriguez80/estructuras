@@ -7,7 +7,7 @@
 	/* definir variables */
 	int aLista[10]={23,5,13,11,7,14,17,19,12,16};
 	int bLista[10]={23,5,13,11,7,14,17,19,12,16};
-	int i, j, swap, opc;
+	int i, j,k,l, swap,swap2, opc;
 	void bubbleSort(void);
 	void insertion(void);
 	int main (){
@@ -86,23 +86,23 @@ void bubbleSort(){
 void insertion()
 	{	
 	
-	for (i=0; i<10; i++){
-				j=i;
-				swap=bLista[i];
-				while ((j>0)&&(swap<bLista[j-1])){
-					bLista[j]=bLista[j-1];
-					j--;
+	for (k=0; k<10; k++){
+				l=i;
+				swap2=bLista[k];
+				while ((l>0)&&(swap2<bLista[l-1])){
+					bLista[l]=bLista[l-1];
+					l--;
 				}
-				bLista[j]=swap;
+				bLista[l]=swap;
 				
-				printf("\nPasada %d ",i+1);
-				printf("empiezo con el no. %d ",bLista[j]);
+				printf("\nPasada %d ",k+1);
+				printf("empiezo con el no. %d ",bLista[l]);
 				
 			}	
 		putchar('\n');	
 		printf("Al finalizar el ordenamiento el vector queda ordenado asi:\n");
-		for (i=0; i<10; i++){
-				printf("%i ", bLista[i]);
+		for (k=0; k<10; i++){
+				printf("%i ", bLista[k]);
 			}
 			printf("\n");
 		
