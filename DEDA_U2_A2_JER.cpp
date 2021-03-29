@@ -7,7 +7,7 @@
 	/* definir variables */
 	int aLista[10]={23,5,13,11,7,14,17,19,12,16};
 	int bLista[10]={23,5,13,11,7,14,17,19,12,16};
-	int i, j,k,l, swap,swap2, opc;
+	int i,j,k,l,swap,swap2, opc;
 	void bubbleSort(void);
 	void insertion(void);
 	int main (){
@@ -47,13 +47,13 @@
 				printf("{5,7,11,13,12,14,16,17,19,23}");
 				
 				break;
-				case 2:
+				/*case 2:
 				printf("Se inicia con la comparacion del valor de inicio con el de la extrema izquierda en casa pasada\n");	
 				insertion();
 				printf("En la cuarta pasada el vector esta ordenado asi:\n");
 				printf("{5 7 11 13 23 14 17 19 12 16}\n");
 					
-				break;
+				break;*/
 				case 3:
 					printf("Programa Concluido"); 
 				break;	
@@ -83,17 +83,17 @@ void bubbleSort(){
 			}
  			
        	}
-void insertion()
+/*void insertion()
 	{	
 	
 	for (k=0; k<10; k++){
-				l=i;
+				l=k;
 				swap2=bLista[k];
 				while ((l>0)&&(swap2<bLista[l-1])){
 					bLista[l]=bLista[l-1];
 					l--;
 				}
-				bLista[l]=swap;
+				bLista[l]=swap2;
 				
 				printf("\nPasada %d ",k+1);
 				printf("empiezo con el no. %d ",bLista[l]);
@@ -101,12 +101,12 @@ void insertion()
 			}	
 		putchar('\n');	
 		printf("Al finalizar el ordenamiento el vector queda ordenado asi:\n");
-		for (k=0; k<10; i++){
+		for (k=0; k<10; k++){
 				printf("%i ", bLista[k]);
 			}
 			printf("\n");
 		
 	}
-       	
+       	*/
 
    
